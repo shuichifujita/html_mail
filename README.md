@@ -13,6 +13,13 @@ $ npm ci
 $ npx gulp
 ```
 
+最初はdist/配下にソースが無いのでserveタスク走らせても404。
+下記はその対応。
+```
+$ npx gulp sass && npx gulp inlineCss
+$ npx gulp
+```
+
 ### メール送信のための設定方法
 
 - Gmailを使って送信する場合
