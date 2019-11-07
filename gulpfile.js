@@ -121,4 +121,4 @@ gulp.task('watch', (done) => {
 });
 
 
-gulp.task('default', gulp.series('serve', 'watch'));
+gulp.task('default', gulp.series('sass', 'inlineCss', 'serve', 'watch'));

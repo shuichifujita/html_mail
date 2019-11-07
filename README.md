@@ -13,11 +13,12 @@ $ npm ci
 $ npx gulp
 ```
 
-最初はdist/配下にソースが無いのでserveタスク走らせても404。
-下記はその対応。
+dist/配下htmlファイルを置くと、localhost:3000/hoge.htmlで接続可能です。
+よって既存のHTMLメールのブラウザ確認もできます。
 ```
-$ npx gulp sass && npx gulp inlineCss
-$ npx gulp
+dist/example.html
+
+http://localhost:3000/example.html
 ```
 
 ### メール送信のための設定方法
